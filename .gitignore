@@ -19,6 +19,7 @@ Cargo.lock
 /gateway/package-lock.json
 /gateway/coverage
 /gateway/.env
+/gateway/*.env
 /gateway/logs/*
 /gateway/src/package-lock.json
 /gateway/src/tests/reports/*

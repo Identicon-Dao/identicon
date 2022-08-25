@@ -64,6 +64,7 @@ export default function VerificationContainer() {
 
       <Container maxW="container.xl" id="dashboard" pt={8}>
         <StatusNotice state={data && data.state} />
+
         {data && data.token_id && (
           <>
             <SectionHeading title="CREDENCIAL" />
@@ -74,7 +75,6 @@ export default function VerificationContainer() {
         )}
 
         <SectionHeading title="DATOS PERSONALES" />
-
         <SectionPanel>
           <PersonalData data={data} />
         </SectionPanel>

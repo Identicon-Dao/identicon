@@ -5,9 +5,10 @@ const nextConfig = {
     disableStaticImages: true,
     domains: [ ],
   },
-  env: {
-    GATEWAY_BASE_URL: "http://localhost:4000"
-  },
+  // using .env file instead
+  // env: { 
+  //   GATEWAY_BASE_URL: "http://identicon.network:4000"
+  // },
   pageExtensions: ["page.tsx"],
   experimental: {
     outputStandalone: true,

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Deploy the app to identicon server 
+# Deploy the Gateway to identicon server 
 # @maz - 2022-08-16
 
 # IMPORTANT: 'identicon.near' access MUST be defined in '~/.ssh/config' as: 
@@ -14,19 +14,18 @@
 BUILD=./.next
 
 # The place where we will copy the files
-TARGET=identicon.near:/opt/identicon/apps/fedevida
+TARGET=identicon.near:/opt/identicon/gateway
 
-yarn build
+#npm run build
 
 # We move the files using rsync to avoid copying already existent files
 echo ""
 echo "---"
 echo "Deploying to: $TARGET"
-rsync -arv ./next.config.js  $TARGET/
-rsync -arv ./package.json  $TARGET/
-rsync -arv ./public/ $TARGET/public/
-rsync -arv $BUILD/ $TARGET/.next/
-rsync -arv $BUILD/standalone/ $TARGET/
+rsync -arv ./src/ $TARGET/src/
+rsync -arv ./node_modules/ $TARGET/node_modules/
+scp ./package.json $TARGET/package.json
+scp ./production.env $TARGET/.env
 
 # Using pm2 process manager for Node 
 # don't need to restart because using watch mode
