@@ -16,6 +16,7 @@ BUILD=./.next
 # The place where we will copy the files
 TARGET=identicon.near:/opt/identicon/apps/fedevida
 
+export NODE_ENV="production"
 yarn build
 
 # We move the files using rsync to avoid copying already existent files
