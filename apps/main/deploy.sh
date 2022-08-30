@@ -6,7 +6,7 @@
 #
 # Host identicon.near
 #   Hostname 38.242.216.233	
-#   IdentityFile /home/{my-home-folder}/.ssh/id_rsa
+#   IdentityFile /home/{my-home-folder}/.ssh/id_rsa_identicon
 #   User ubuntu
 
 # The place where it was created the build

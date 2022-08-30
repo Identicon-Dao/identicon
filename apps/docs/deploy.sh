@@ -5,4 +5,4 @@
 mkdocs build
 
 # just rsync to server (#identicon.near must be setup)
-rsync -arv ./site/ identicon.near:/opt/identicon/docs/
+rsync -arv ./site/ identicon.near:/var/www/identicon.network/docs/
