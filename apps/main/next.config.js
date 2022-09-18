@@ -6,7 +6,6 @@ const nextConfig = {
     domains: [ ],
   },
   env: {
-    GATEWAY_BASE_URL: "http://localhost:4000"
   },
   pageExtensions: ["page.tsx"],
   experimental: {
