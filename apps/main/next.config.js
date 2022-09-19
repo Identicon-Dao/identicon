@@ -6,6 +6,7 @@ const nextConfig = {
     domains: [ ],
   },
   env: {
+    NEXT_PUBLIC_GATEWAY_BASE_URL: 'http://api.identicon.network'
   },
   pageExtensions: ["page.tsx"],
   experimental: {
