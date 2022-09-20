@@ -5,9 +5,6 @@ const nextConfig = {
     disableStaticImages: true,
     domains: [ ],
   },
-  env: {
-    NEXT_PUBLIC_GATEWAY_BASE_URL: 'https://api.identicon.network'
-  },
   pageExtensions: ["page.tsx"],
   experimental: {
     outputStandalone: true,
