@@ -3,7 +3,7 @@ import { AuthSessionData, UpdateAccountData } from "../models/accounts";
 import { RequestVerificationData } from "../models/verifications";
 import { VerificationStates } from "../constants/states";
 
-export const baseUrl = `${process.env.GATEWAY_BASE_URL}`;
+export const baseUrl = `${process.env.NEXT_PUBLIC_GATEWAY_BASE_URL}`;
 
 const api = {
   requestVerification: async (data: RequestVerificationData) => {
